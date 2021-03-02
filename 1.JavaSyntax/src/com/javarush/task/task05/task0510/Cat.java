@@ -1,0 +1,42 @@
+package com.javarush.task.task05.task0510;
+
+/* 
+Кошкоинициация
+*/
+
+public class Cat {
+    private String name;
+    private int weight = 10;
+    private int age = 20;
+    private String color = "red";
+    private String address;
+
+    public void initialize(String name){
+        this.name = name;
+    }
+
+    public void initialize(String name, int weight, int age){
+        this.name = name;
+        this.weight = weight;
+        this.age = age;
+    }
+
+    public void initialize(String name, int age){
+        weight = 30;
+        this.name = name;
+        this.age = age;
+    }
+
+    public void initialize(int weight, String color){
+        this.weight = weight;
+        this.color = color;
+        age = 20;
+
+    }
+
+    public void initialize(int weight, String color, String address){
+        this.weight = weight;
+        this.color = color;
+        this.address = address;
+    }
+}
