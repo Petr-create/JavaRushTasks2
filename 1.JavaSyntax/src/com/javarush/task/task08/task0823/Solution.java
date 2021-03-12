@@ -26,12 +26,21 @@ public class Solution {
 //        System.out.println(str);
         //------------------------------------------
 
-        StringTokenizer tokenizer = new StringTokenizer(string);
-        String str = "";
-        while(tokenizer.hasMoreTokens()) {
-            String s = tokenizer.nextToken();
-            str += s.substring(0,1).toUpperCase() + s.substring(1) + " ";
+//        StringTokenizer tokenizer = new StringTokenizer(string);
+//        String str = "";
+//        while(tokenizer.hasMoreTokens()) {
+//            String s = tokenizer.nextToken();
+//            str += s.substring(0,1).toUpperCase() + s.substring(1) + " ";
+//        }
+//        System.out.println(str);
+
+        String result = "";
+        char[] chars = string.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            char character = (i == 0 || chars[i - 1] == ' ') ? Character.toUpperCase(chars[i])
+                    : chars[i];
+            result += character;
         }
-        System.out.println(str);
+        System.out.println(result);
     }
 }
