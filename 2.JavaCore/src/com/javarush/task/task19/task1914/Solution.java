@@ -36,6 +36,7 @@ public class Solution {
         public void printSomething() {
             System.out.println("3 + 6 = ");
         }
+
     }
 }
 
